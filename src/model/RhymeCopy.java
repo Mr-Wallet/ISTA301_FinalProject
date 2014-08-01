@@ -9,6 +9,8 @@ public class RhymeCopy {
 		// TODO Auto-generated method stub
 		
 		//This is Jordan's comment
+		
+		//this is a new comment
 
 	}
 
