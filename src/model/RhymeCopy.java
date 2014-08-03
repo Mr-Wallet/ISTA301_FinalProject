@@ -20,15 +20,23 @@ public class RhymeCopy {
 	 */
 	public static void main(String[] args) {
 		if(!validDirectory(args)) {
-			System.out.println("The argument should be a directory with annotated lyric files.");
+			System.out.println("The argument should be a directory of annotated lyric files.");
 			System.exit(1);
 		}
 
 		RCRhymeDictionary rhymeDict = new RCRhymeDictionary();
 		RCLyricMap lyricMap = new RCLyricMap();
 		RCSongStructure songStruct = new RCSongStructure();
+
+		RCFileReader.setRhymeDictionary(rhymeDict);
+		RCFileReader.setLyricMap(lyricMap);
+		RCFileReader.setSongStructure(songStruct);
 		
-		//TODO iterate over the files in the directory and have RCFileReader handle them all
+		File[] lyricFiles = new File(args[0]).listFiles();
+		for(File file : lyricFiles) {
+			RCFileReader.setGeneration(file);
+		}
+		
 		
 		ArrayList<String> lineEndings = RCStructureGenerator.generateSongStructure();
 		ArrayList<String> outputSong = new ArrayList<String>();
