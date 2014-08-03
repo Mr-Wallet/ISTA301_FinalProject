@@ -1,6 +1,7 @@
 package model;
 
 import java.io.File;
+import java.util.ArrayList;
 
 /**
  * RhymeCopy uses a corpus of annotated rhyming lyrics to generate its own lyrics in the same style.
@@ -28,12 +29,15 @@ public class RhymeCopy {
 		
 		//TODO iterate over the files in the directory and have RCFileReader handle them all
 		
-		//TODO generate a song structure
+		ArrayList<String> lineEndings = RCStructureGenerator.generateSongStructure();
+		ArrayList<String> outputSong = new ArrayList<String>();
 		
 		RCLineGenerator.setLyricMap(lyricMap);
-		//TODO generate all the necessary lines based on the song structure
+		for(String lastWord : lineEndings) {
+			outputSong.add(RCLineGenerator.generateLine(lastWord));
+		}
 		
-		//TODO use RCFileWriter to write the final song to an output file
+		RCFileWriter.writeSong(outputSong);
 	}
 
 	private static boolean validDirectory(String[] args) {
