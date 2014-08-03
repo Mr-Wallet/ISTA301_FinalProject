@@ -7,14 +7,15 @@ import java.util.Random;
  */
 public class RCLineGenerator {
 	private static RCLyricMap lyricMap;
-	private static final int DEFAULT_WORD_COUNT = 7;
+	private static final int MIN_WORD_COUNT = 4;
+	private static final int MAX_WORD_COUNT = 13;
 	
 	public static void setLyricMap(RCLyricMap map) {
 		lyricMap = map;
 	}
 	
 	public static String generateLine(String lastWord) {
-		int desiredWordCount = DEFAULT_WORD_COUNT - 1 + (new Random()).nextInt(2);
+		int desiredWordCount = MIN_WORD_COUNT + (new Random()).nextInt(MAX_WORD_COUNT - MIN_WORD_COUNT);
 		return generateLine(lastWord, desiredWordCount);
 	}
 	
@@ -23,7 +24,7 @@ public class RCLineGenerator {
 			throw new NullPointerException("You forgot to set RCLineGenerator's lyric map");
 		}
 		String result = lastWord;
-		while(wordCount(result) < desiredWordCount) {
+		while(wordCount(result) < desiredWordCount) { //TODO && lyricmap.hasnextword
 			//TODO ask lyricmap for another word
 		}
 		return result;
