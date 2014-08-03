@@ -12,6 +12,7 @@ import java.util.ArrayList;
  */
 
 public class RhymeCopy {
+	private static final String OUTPUT_FILE_PATH = "output.txt";
 
 	/**
 	 * 
@@ -37,7 +38,7 @@ public class RhymeCopy {
 			outputSong.add(RCLineGenerator.generateLine(lastWord));
 		}
 		
-		RCFileWriter.writeSong(outputSong);
+		RCFileWriter.writeSong(OUTPUT_FILE_PATH, outputSong);
 	}
 
 	private static boolean validDirectory(String[] args) {
