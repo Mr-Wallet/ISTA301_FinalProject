@@ -9,32 +9,37 @@ import java.util.TreeSet;
 
 public class RCFileReader {
 
-	private String fileName;
-	private HashMap<String, TreeSet<String>> setMap;
-	Scanner scanner;
-	RCRhymeDictionary rhymeDict;
-	RCLyricMap lyricMap;
-	RCSongStructure songStruc;
 
-	public RCFileReader(String fileName, RCRhymeDictionary rhymeDict, RCLyricMap lyricMap, RCSongStructure songStruc){
+	static RCRhymeDictionary rhymeDict;
+	static RCLyricMap lyricMap;
+	static RCSongStructure songStruc;
 
-		this.fileName = fileName;
-		this.rhymeDict = rhymeDict;
-		this.lyricMap = lyricMap;
-		this.songStruc = songStruc;
+	public static void setRhymeDictionary(RCRhymeDictionary dict) {	
+		rhymeDict = dict;		
+	}
+
+	public static void setLyricMap(RCLyricMap map) {
+		lyricMap = map;		
+	}
+
+	public static void setSongStructure(RCSongStructure song) {
+		songStruc = song;
+	}
+
+	public static void setGeneration(File file){
+
+		String fileName;
+		HashMap<String, TreeSet<String>> setMap;
+		Scanner scanner;
+
 
 		scanner = null;
 
 		try {
-			scanner = new Scanner(new File(this.fileName));
+			scanner = new Scanner(file);
 		} catch (FileNotFoundException e) {
-			System.out.println(this.fileName + " not found");
+			System.out.println(file + " not found");
 		}
-
-	}
-
-
-	private void setGeneration(){
 
 		setMap = new HashMap<String, TreeSet<String>>();
 
@@ -65,11 +70,11 @@ public class RCFileReader {
 
 		for(Object str : setMap.keySet()) // for about Local Map
 			System.out.println(str +": "+setMap.get(str));
-		
+
 		lyricMap.generateMap();
 
-		
-		
+
+
 	}
 
 
