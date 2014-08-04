@@ -7,5 +7,5 @@ package model;
  * 
  */
 public class RCSongStructure {
-
+	//TODO figure out how song structure works
 }

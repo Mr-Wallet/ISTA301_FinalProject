@@ -24,8 +24,10 @@ public class RCLineGenerator {
 			throw new NullPointerException("You forgot to set RCLineGenerator's lyric map");
 		}
 		String result = lastWord;
-		while(wordCount(result) < desiredWordCount) { //TODO && lyricmap.hasnextword
-			//TODO ask lyricmap for another word
+		while(wordCount(result) < desiredWordCount && lyricMap.hasPreviousWord(lastWord)) {
+			String newWord = lyricMap.getRandomPreviousWord(lastWord);
+			result = newWord + " " + result;
+			lastWord = newWord;
 		}
 		return result;
 	}
