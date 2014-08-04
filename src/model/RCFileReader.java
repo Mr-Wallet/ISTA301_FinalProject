@@ -31,6 +31,7 @@ public class RCFileReader {
 		songStruc = song;
 	}
 
+	//TODO: The file format is going to change to reflect the positions of verses and choruses
 	public static void setGeneration(File file) {
 
 		HashMap<String, ArrayList<String>> setMap;

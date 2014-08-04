@@ -11,23 +11,55 @@ public class RCStructureGenerator {
 	public static void setSongStructure(RCSongStructure struct) {
 		songStruct = struct;
 	}
-	
+
 	public static void setRhymeDictionary(RCRhymeDictionary dict) {
 		rhymeDict = dict;
 	}
-	
-	public static ArrayList<String> generateSongStructure() {
-		ArrayList<String> result = new ArrayList<String>();
+
+	/**
+	 * 
+	 * @return a list of LargeSongElement which are aware of their final words and their element type.
+	 */
+	public static List<LargeSongElement> generateSongSkeleton() {
+		ArrayList<LargeSongElement> result = new ArrayList<LargeSongElement>();
 		Random rnd = new Random();
+
+		List<LargeSongElement> songStructure = songStruct
+				.generateRandomSongStructure();
 		
-		//TODO use RCSongStructure in a meaningful way
-		
-		for(int i = 0; i < 8; i++) {
-			List<String> rs = rhymeDict.getRandomRhymeList();
-			result.add(rs.get(rnd.nextInt(rs.size())));
-			result.add(rs.get(rnd.nextInt(rs.size())));
+		LargeSongElement chorusElement = null;
+
+		//now generate each verse, inserting choruses as needed
+		for (LargeSongElement lse : songStructure) {
+			List<List<String>> rhymeSets = new ArrayList<List<String>>();
+			List<Integer> rhymeStructure = lse.getRhymeStructure();
+			List<String> lastWords = lse.getLastWords();
+			
+			if(lse.getSongElementType() == SongElementType.CHORUS && chorusElement != null) {
+				result.add(chorusElement);
+				continue;
+			}
+
+			// generate each line
+			for (Integer i : rhymeStructure) {
+				while (i >= rhymeSets.size()) {
+					rhymeSets.add(rhymeDict.getRandomRhymeList());
+				}
+				List<String> currentRhymeSet = rhymeSets.get(i);
+
+				String randomWord = currentRhymeSet.get(rnd.nextInt(rhymeSets.size()));
+				while (lastWords.contains(randomWord))
+					currentRhymeSet.get(rnd.nextInt(rhymeSets.size()));
+
+				lastWords.add(randomWord);
+			}
+			
+			if(lse.getSongElementType() == SongElementType.CHORUS) {
+				chorusElement = lse;
+			}
+			result.add(lse);
 		}
-		
+
 		return result;
 	}
 }

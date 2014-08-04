@@ -2,13 +2,15 @@ package model;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
- * RhymeCopy uses a corpus of annotated rhyming lyrics to generate its own lyrics in the same style.
- * Created as a final project for ISTA 301, Summer 2014.
+ * RhymeCopy uses a corpus of annotated rhyming lyrics to generate its own
+ * lyrics in the same style. Created as a final project for ISTA 301, Summer
+ * 2014.
  * 
  * @author Nicolas Azevedo Costa and Jordan Wallet
- *
+ * 
  */
 
 public class RhymeCopy {
@@ -16,11 +18,14 @@ public class RhymeCopy {
 
 	/**
 	 * 
-	 * @param args Expects a single argument, the directory to read lyric files from.
+	 * @param args
+	 *            Expects a single argument, the directory to read lyric files
+	 *            from.
 	 */
 	public static void main(String[] args) {
-		if(!validDirectory(args)) {
-			System.out.println("The argument should be a directory of annotated lyric files.");
+		if (!validDirectory(args)) {
+			System.out
+					.println("The argument should be a directory of annotated lyric files.");
 			System.exit(1);
 		}
 
@@ -31,30 +36,42 @@ public class RhymeCopy {
 		RCFileReader.setRhymeDictionary(rhymeDict);
 		RCFileReader.setLyricMap(lyricMap);
 		RCFileReader.setSongStructure(songStruct);
-		
+
 		File[] lyricFiles = new File(args[0]).listFiles();
-		for(File file : lyricFiles) {
+		for (File file : lyricFiles) {
 			RCFileReader.setGeneration(file);
 		}
-		
-		
-		ArrayList<String> lineEndings = RCStructureGenerator.generateSongStructure();
-		ArrayList<String> outputSong = new ArrayList<String>();
-		
+
+		List<LargeSongElement> songElements = RCStructureGenerator
+				.generateSongSkeleton();
+		List<String> outputSong = new ArrayList<String>();
+
 		RCLineGenerator.setLyricMap(lyricMap);
-		for(String lastWord : lineEndings) {
-			outputSong.add(RCLineGenerator.generateLine(lastWord));
+		for (LargeSongElement el : songElements) {
+			List<String> lines = el.getLines();
+			if(!lines.isEmpty()) //repetition, probably chorus
+				continue;
+				
+			for (String lastWord : el.getLastWords()) {
+				lines.add(RCLineGenerator.generateLine(lastWord));
+			}
 		}
+
 		
+		for(LargeSongElement el : songElements) {
+			outputSong.addAll(el.getLines());
+		}
+
+
 		RCFileWriter.writeSong(OUTPUT_FILE_PATH, outputSong);
 	}
 
 	private static boolean validDirectory(String[] args) {
-		if(args.length < 1 || args[0].length() < 1)
+		if (args.length < 1 || args[0].length() < 1)
 			return false;
-		
+
 		File dir = new File(args[0]);
-		if(dir.isDirectory())
+		if (dir.isDirectory())
 			return false;
 
 		return true;
