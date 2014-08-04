@@ -25,7 +25,7 @@ public class RCLyricMap {
 
 	}
 
-	public void generateMap() {
+	public void printMap() {
 
 		for (Object str : textMap.keySet())
 			System.out.println(str + ": " + textMap.get(str));

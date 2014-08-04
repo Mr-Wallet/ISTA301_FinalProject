@@ -33,7 +33,6 @@ public class RCFileReader {
 
 	public static void setGeneration(File file) {
 
-		String fileName;
 		HashMap<String, ArrayList<String>> setMap;
 		Scanner scanner;
 
@@ -47,17 +46,16 @@ public class RCFileReader {
 
 		setMap = new HashMap<String, ArrayList<String>>();
 
-		ArrayList<String> array;
 
 		while (scanner.hasNextLine()) {
 			String str = scanner.nextLine();
 
 			String[] words = str.split("\\s+");
 
-			// Local Map
+			// Rhyming Dictionary
 
 			if (!setMap.containsKey(words[0])) {
-				setMap.put(words[0], array = new ArrayList<String>());
+				setMap.put(words[0], new ArrayList<String>());
 			}
 
 			setMap.get(words[0]).add(words[words.length - 1]);
@@ -70,11 +68,11 @@ public class RCFileReader {
 
 		}
 
-		for (Object str : setMap.keySet())
-			// for about Local Map
-			System.out.println(str + ": " + setMap.get(str));
+		for (String str : setMap.keySet()) {
+			rhymeDict.addWords(setMap.get(str));
+		}
 
-		lyricMap.generateMap();
+		lyricMap.printMap();
 
 	}
 
