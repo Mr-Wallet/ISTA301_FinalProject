@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-import java.util.TreeSet;
+
 
 /**
  * This class builds up the data structures using input files. First its setters
