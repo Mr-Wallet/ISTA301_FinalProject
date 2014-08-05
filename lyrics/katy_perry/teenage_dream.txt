@@ -1,0 +1,99 @@
+verse	A	You think I'm pretty
+.		B	Without any makeup on
+.		A	You think I'm funny
+.		B	When I tell the punchline wrong
+.		A	I know you get me
+.		C	So I let my walls come down, down
+
+verse	D	Before you met me
+.		E	I was alright but things
+.		D	Were kinda heavy
+.		F	You brought me to life
+.		D	Now every February
+.		G	You'll be my Valentine, Valentine
+
+bridge	H	Let's go all the way tonight
+.		I	No regrets, just love
+.		H	We can dance, until we die
+.		J	You and I, will be young forever
+
+chorus	K	You make me
+.		L	Feel like I'm livin' a
+.		K	Teenage dream
+.		M	The way you turn me on
+.		K	I can't sleep
+.		N	Let's run away and
+.		P	Don't ever look back
+.		P	Don't ever look back
+
+.		Q	My heart stops
+.		R	When you look at me
+.		S	Just one touch
+.		R	Now baby I believe
+.		T	This is real
+.		U	So take a chance and
+.		V	Don't ever look back
+.		V	Don't ever look back
+
+verse	W	We drove to Cali
+.		X	And got drunk on the beach
+.		Y	Got a motel and
+.		X	Built a fort out of sheets
+.		Z	I finally found you
+.		X	My missing puzzle piece
+.		X	I'm complete
+
+bridge	AA	Let's go all the way tonight
+.		AB	No regrets, just love
+.		AA	We can dance, until we die
+.		AC	You and I, will be young forever
+
+chorus	AD	You make me
+.		AE	Feel like I'm livin' a
+.		AD	Teenage dream
+.		AF	The way you turn me on
+.		AD	I can't sleep
+.		AG	Let's run away and
+.		AH	Don't ever look back
+.		AH	Don't ever look back
+
+.		AI	My heart stops
+.		AJ	When you look at me
+.		AK	Just one touch
+.		AJ	Now baby I believe
+.		AL	This is real
+.		AM	So take a chance and
+.		AN	Don't ever look back
+.		AN	Don't ever look back
+
+break	AO	I'mma get your heart racing
+.		AO	In my skin-tight jeans
+.		AP	Be your teenage dream tonight
+.		AO	Let you put your hands on me
+.		AO	In my skin-tight jeans
+.		AP	Be your teenage dream tonight
+
+chorus	AQ	You make me
+.		AR	Feel like I'm livin' a
+.		AQ	Teenage dream
+.		AS	The way you turn me on
+.		AQ	I can't sleep
+.		AT	Let's run away and
+.		AU	Don't ever look back
+.		AU	Don't ever look back
+
+.		AV	My heart stops
+.		AW	When you look at me
+.		AX	Just one touch
+.		AW	Now baby I believe
+.		AY	This is real
+.		AZ	So take a chance and
+.		BA	Don't ever look back
+.		BA	Don't ever look back
+
+break	BB	I'mma get your heart racing
+.		BB	In my skin-tight jeans
+.		BC	Be your teenage dream tonight
+.		BB	Let you put your hands on me
+.		BB	In my skin-tight jeans
+.		BC	Be your teenage dream tonight
