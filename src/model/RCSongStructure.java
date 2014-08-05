@@ -15,6 +15,7 @@ public class RCSongStructure {
 	private List<List<SongElementType>> songSchemes = new ArrayList<List<SongElementType>>();
 	private List<List<Integer>> verseSchemes = new ArrayList<List<Integer>>();
 	private List<List<Integer>> chorusSchemes = new ArrayList<List<Integer>>();
+	private List<List<Integer>> bridgeSchemes = new ArrayList<List<Integer>>();
 
 	private List<SongElementType> currentSong;
 	private LargeSongElement currentElement;
@@ -24,6 +25,7 @@ public class RCSongStructure {
 		songSchemes = new ArrayList<List<SongElementType>>();
 		verseSchemes = new ArrayList<List<Integer>>();
 		chorusSchemes = new ArrayList<List<Integer>>();		
+		bridgeSchemes = new ArrayList<List<Integer>>();		
 	}
 
 	/**
@@ -54,6 +56,38 @@ public class RCSongStructure {
 		currentSong.add(SongElementType.BREAK);
 
 		currentElement = new LargeSongElement(SongElementType.BREAK);
+		currentScheme = currentElement.getRhymeStructure();
+	}
+	
+	/**
+	 * A bridge is a special verse that precedes a chorus; it is usually shorter than other verses.
+	 */
+	public void startNewBridge() {
+		currentSong.add(SongElementType.BRIDGE);
+
+		currentElement = new LargeSongElement(SongElementType.BRIDGE);
+		currentScheme = currentElement.getRhymeStructure();
+	}
+	
+	/**
+	 * An intro is a verse that only appears at the very beginning of the song.
+	 * Intros are considered bridges for structure purposes because they are similarly short.
+	 */
+	public void startNewIntro() {
+		currentSong.add(SongElementType.INTRO);
+
+		currentElement = new LargeSongElement(SongElementType.INTRO);
+		currentScheme = currentElement.getRhymeStructure();
+	}
+
+	/**
+	 * An outro is a verse that only appears at the very end of the song.
+	 * outros are considered bridges for structure purposes because they are similarly short.
+	 */
+	public void startNewOutro() {
+		currentSong.add(SongElementType.OUTRO);
+
+		currentElement = new LargeSongElement(SongElementType.OUTRO);
 		currentScheme = currentElement.getRhymeStructure();
 	}
 
@@ -99,9 +133,18 @@ public class RCSongStructure {
 		
 		LargeSongElement songChorus = new LargeSongElement(SongElementType.CHORUS);
 		songChorus.setRhymeStructure(chorusSchemes.get(rnd.nextInt(chorusSchemes.size())));
-		
+
 		LargeSongElement songBreak = new LargeSongElement(SongElementType.BREAK);
 		songBreak.setRhymeStructure(verseSchemes.get(rnd.nextInt(verseSchemes.size())));
+
+		LargeSongElement songBridge = new LargeSongElement(SongElementType.BRIDGE);
+		songBreak.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
+		
+		LargeSongElement songIntro = new LargeSongElement(SongElementType.INTRO);
+		songBreak.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
+		
+		LargeSongElement songOutro = new LargeSongElement(SongElementType.OUTRO);
+		songBreak.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
 		
 		for(SongElementType elType : overallForm) {
 			switch(elType) {
@@ -113,6 +156,15 @@ public class RCSongStructure {
 					break;
 				case BREAK:
 					result.add(songBreak);
+					break;
+				case BRIDGE:
+					result.add(songBridge);
+					break;
+				case INTRO:
+					result.add(songIntro);
+					break;
+				case OUTRO:
+					result.add(songOutro);
 					break;
 			}
 		}
