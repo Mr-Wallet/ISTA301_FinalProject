@@ -28,15 +28,15 @@ public class RCRhymeDictionary {
 		else{
 
 			// This nested for loop is used to merge all words of array List
-			for(int i=0 ; i <arrayList.size()-1; i++){ //for used to get each word of the parameter
+			for(int i=0 ; i < arrayList.size(); i++){ //for used to get each word of the parameter
 
 				ArrayList<Integer> track = new ArrayList<Integer>();
 
 				// for which takes each group of arrayList in rhymeList
-				for(int j=0; j < rhymeList.size()-1;j++){
+				for(int j=0; j < rhymeList.size(); j++){
 
 					// for which takes each word of arrayList in rhymeList
-					for(int k=0; k < rhymeList.get(j).size()-1; k++){
+					for(int k=0; k < rhymeList.get(j).size(); k++){
 
 						if(arrayList.get(i).equals(rhymeList.get(j).get(k))){
 
@@ -55,13 +55,13 @@ public class RCRhymeDictionary {
 			// nested for loop which add the arrayList parameter if found the words
 			// in the rhymeList. Otherwise, creates a new group of arrayList in the
 			// rhymeList.
-			for(int i=0 ; i <arrayList.size()-1; i++){ //for used to get each word of the parameter
+			for(int i=0 ; i < arrayList.size(); i++){ //for used to get each word of the parameter
 
 				// for which takes each group of arrayList in rhymeList
-				for(int j=0; j < rhymeList.size()-1;j++){
+				for(int j=0; j < rhymeList.size(); j++){
 
 					// for which takes each word of arrayList in rhymeList
-					for(int k=0; k < rhymeList.get(j).size()-1; k++){
+					for(int k=0; k < rhymeList.get(j).size(); k++){
 
 						if(arrayList.get(i).equals(rhymeList.get(j).get(k))){
 
@@ -94,6 +94,24 @@ public class RCRhymeDictionary {
 
 
 	}
+	
+	public int getSize(){
+		return rhymeList.size();
+	}
+	
+	public int getSizeGivenRhymeList(int index){
+		return rhymeList.get(index).size();
+	}
+	
+	public List<String> getRhymeList(int index) {
+
+		List<String> list;
+
+		list = rhymeList.get(index);
+
+		return list;
+	}
+
 
 
 }
