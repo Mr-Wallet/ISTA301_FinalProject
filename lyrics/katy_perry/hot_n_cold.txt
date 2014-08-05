@@ -1,0 +1,77 @@
+verse	AA	You change your mind
+.		AB	Like a girl changes clothes
+.		AC	Yeah, you, PMS
+.		AB	Like a bitch I would know
+.		AD	And you overthink
+.		AD	Always speak critically
+.		AE	I should know that you're no good for me
+
+chorus	BA	'Cause you're hot then you're cold
+.		BA	You're yes then you're no
+.		BB	You're in then you're out
+.		BB	You're up then you're down
+.		BC	You're wrong when it's right
+.		BC	It's black and it's white
+.		BD	We fight, we break up
+.		BD	We kiss, we make up
+.		AA	You don't really wanna stay, no
+.		AA	you should really wanna go, oh
+.		BA	You're hot then you're cold
+.		BA	You're yes then you're no
+.		BB	You're in then you're out
+.		BB	You're up then you're down
+
+verse	CA	We used to be
+.		CA	Just like twins	so in sync
+.		CA	The same energy
+.		CA	Now's a dead battery
+.		CA	Used to laugh 'bout nothing
+.		CA	Now you're plain boring
+.		CB	I should know that you're not gonna change
+
+chorus	DA	'Cause you're hot then you're cold
+.		DA	You're yes then you're no
+.		DB	You're in then you're out
+.		DB	You're up then you're down
+.		DC	You're wrong when it's right
+.		DC	It's black and it's white
+.		DD	We fight, we break up
+.		DD	We kiss, we make up
+.		DA	You don't really wanna stay, no
+.		DA	You should really wanna go, oh
+.		DA	You're hot then you're cold
+.		DA	You're yes then you're no
+.		DB	You're in then you're out
+.		DB	You're up then you're down
+
+break	EA	Someone call the doctor
+.		EA	Got a case of a love bipolar
+.		EA	Stuck on a roller coaster
+.		EB	Can't get off this ride
+
+bridge	FA	You change your mind
+.		FB	Like a girl changes clothes
+
+chorus	GA	'Cause you're hot then you're cold
+.		GA	You're yes then you're no
+.		GB	You're in then you're out
+.		GB	You're up then you're down
+.		GC	You're wrong when it's right
+.		GC	It's black and it's white
+.		GD	We fight, we break up
+.		GD	We kiss, we make up
+
+chorus	HA	You're hot then you're cold
+.		HA	You're yes then you're no
+.		HB	You're in then you're out
+.		HB	You're up then you're down
+.		HC	You're wrong when it's right
+.		HC	It's black and it's white
+.		HD	We fight, we break up
+.		HD	We kiss, we make up
+.		HA	You don't really wanna stay, no
+.		HA	You should really wanna go, oh
+.		HA	You're hot then you're cold
+.		HA	You're yes then you're no
+.		HB	You're in then you're out
+.		HB	You're up then you're down

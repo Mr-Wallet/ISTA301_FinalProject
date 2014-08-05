@@ -1,0 +1,77 @@
+verse	AA	I used to bite my tongue and hold my breath
+.		AA	Scared to rock the boat and make a mess
+.		AB	So I sat quietly
+.		AB	agreed politely
+
+verse	AC	I guess that I forgot I had a choice
+.		AC	I let you push me past the breaking point
+.		AD	I stood for nothing
+.		AD	so I fell for everything
+
+bridge	BA	You held me down, but I got up
+.		BA	Already brushing off the dust
+.		BB	You hear my voice, you hear that sound
+.		BB	Like thunder gonna shake the ground
+.		BC	You held me down, but I got up
+.		BC	Get ready 'cause I’ve had enough
+.		BD	I see it all, I see it now
+
+chorus	CA	I got the eye of the tiger, a fighter
+.		CA	dancing through the fire
+.		CB	'Cause I am a champion
+.		CC	and you’re gonna hear me roar
+.		CB	Louder, louder than a lion
+.		CB	'Cause I am a champion
+.		CC	and you’re gonna hear me roar
+.		CD	Oh oh oh oh oh oh
+.		CD	Oh oh oh oh oh oh
+.		CD	Oh oh oh oh oh oh
+.		CC	You’re gonna hear me roar
+
+verse	DA	Now I’m floating like a butterfly
+.		DA	Stinging like a bee I earned my stripes
+.		DB	I went from zero
+.		DB	to my own hero
+
+break	EA	You held me down, but I got up
+.		EA	Already brushing off the dust
+.		EB	You hear my voice, you hear that sound
+.		EB	Like thunder gonna shake the ground
+.		EC	You held me down, but I got up
+.		EC	Get ready 'cause I’ve had enough
+.		ED	I see it all, I see it now
+
+chorus	FA	I got the eye of the tiger, a fighter
+.		FA	dancing through the fire
+.		FB	'Cause I am a champion
+.		FC	and you’re gonna hear me roar
+.		FB	Louder, louder than a lion
+.		FB	'Cause I am a champion
+.		FC	and you’re gonna hear me roar
+.		FD	Oh oh oh oh oh oh
+.		FD	Oh oh oh oh oh oh
+.		FD	Oh oh oh oh oh oh
+.		FC	You’re gonna hear me roar
+
+break	GA	Oh oh oh oh oh oh
+.		GA	Oh oh oh oh oh oh
+.		GA	Oh oh oh oh oh oh
+.		GB	You're gonna hear me roar
+
+chorus	HA	I got the eye of the tiger, a fighter
+.		HA	dancing through the fire
+.		HB	'Cause I am a champion
+.		HC	and you’re gonna hear me roar
+.		HB	Louder, louder than a lion
+.		HB	'Cause I am a champion
+.		HC	and you’re gonna hear me roar
+.		HD	Oh oh oh oh oh oh
+.		HD	Oh oh oh oh oh oh
+.		HD	Oh oh oh oh oh oh
+.		HC	You’re gonna hear me roar
+
+outro	IA	Oh oh oh oh oh oh
+.		IA	Oh oh oh oh oh oh
+.		IB	You'll hear me roar
+.		IA	Oh oh oh oh oh oh
+.		IB	You're gonna hear me roar

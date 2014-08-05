@@ -41,7 +41,9 @@ public class RCRhymeDictionary {
 
 					if(arrayList.get(i).equals(rhymeList.get(j).get(k))){
 
-						track.add(j);
+						if(!track.contains(j))
+							track.add(j);
+						
 						break;
 
 					}
@@ -82,11 +84,11 @@ public class RCRhymeDictionary {
 
 	// Merge help method which merge the arrayLists in common in the rhymeList.  
 	private void merge(ArrayList<Integer> track) {
-
+		
 		for(int i=track.size()-1; i>0; i--){
 
 			rhymeList.get(track.get(0)).addAll(rhymeList.get(track.get(i)));
-			rhymeList.remove(rhymeList.get(track.get(i)));			
+			rhymeList.remove((int) track.get(i));	
 		}
 
 
@@ -109,6 +111,7 @@ public class RCRhymeDictionary {
 		return list;
 	}
 	
+	@Override
 	public String toString(){
 		
 		String str = "{ ";

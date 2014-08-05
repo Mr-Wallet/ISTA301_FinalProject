@@ -24,6 +24,7 @@ public class RhymeCopy {
 	 */
 	public static void main(String[] args) {
 		if (!validDirectory(args)) {
+			System.out.println(args[0]);
 			System.out
 					.println("The argument should be a directory of annotated lyric files.");
 			System.exit(1);
@@ -42,6 +43,9 @@ public class RhymeCopy {
 			RCFileReader.setGeneration(file);
 		}
 
+
+		RCStructureGenerator.setRhymeDictionary(rhymeDict);
+		RCStructureGenerator.setSongStructure(songStruct);
 		List<LargeSongElement> songElements = RCStructureGenerator
 				.generateSongSkeleton();
 		List<String> outputSong = new ArrayList<String>();
@@ -71,7 +75,7 @@ public class RhymeCopy {
 			return false;
 
 		File dir = new File(args[0]);
-		if (dir.isDirectory())
+		if (!dir.isDirectory())
 			return false;
 
 		return true;
