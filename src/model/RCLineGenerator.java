@@ -8,7 +8,7 @@ import java.util.Random;
 public class RCLineGenerator {
 	private static RCLyricMap lyricMap;
 	private static final int MIN_WORD_COUNT = 4;
-	private static final int MAX_WORD_COUNT = 13;
+	private static final int MAX_WORD_COUNT = 13;;
 	
 	public static void setLyricMap(RCLyricMap map) {
 		lyricMap = map;
@@ -27,10 +27,13 @@ public class RCLineGenerator {
 		String result = lastWord;
 		while(wordCount(result) < desiredWordCount && lyricMap.hasPreviousWord(lastWord)) {
 			String newWord = lyricMap.getRandomPreviousWord(lastWord);
+			if(newWord.replaceAll("\\p{Punct}", "").toLowerCase().equals("i") || newWord.toLowerCase().startsWith("i'"))
+				newWord = "I" + newWord.substring(1);
 			result = newWord + " " + result;
 			lastWord = newWord;
 		}
-		return result;
+		
+		return result.substring(0,1).toUpperCase() + result.substring(1);
 	}
 	
 	private static int wordCount(String s) {

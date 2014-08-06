@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
 
+/**
+ * IMPORTANT: Keys should be lowercase and should never include punctuation!
+ */
 public class RCLyricMap {
 
 	private HashMap<String, ArrayList<String>> textMap;
@@ -16,8 +19,7 @@ public class RCLyricMap {
 	}
 	
 	public void addWords(String wordKey, String wordValue) {
-		
-
+		wordKey = wordKey.toLowerCase().replaceAll("\\p{Punct}", "");
 		if (!textMap.containsKey(wordKey)) {
 			textMap.put(wordKey, new ArrayList<String>());
 		}
@@ -39,7 +41,7 @@ public class RCLyricMap {
 	 *         otherwise
 	 */
 	public boolean hasPreviousWord(String word) {
-		return textMap.containsKey(word);
+		return textMap.containsKey(word.toLowerCase().replaceAll("\\p{Punct}", ""));
 	}
 
 	/**
@@ -49,6 +51,7 @@ public class RCLyricMap {
 	 * @return a random word from the value list
 	 */
 	public String getRandomPreviousWord(String word) {
+		word = word.toLowerCase().replaceAll("\\p{Punct}", "");
 		if (!textMap.containsKey(word))
 			throw new IllegalArgumentException(
 					"You must check hasPreviousWord() before trying to get a random one.");

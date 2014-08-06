@@ -52,9 +52,6 @@ public class RCFileReader {
 				continue;
 
 			String[] words = str.toLowerCase().split("\\s+");
-			for(int i = 2; i < words.length; i++) {
-				words[i] = words[i].replaceAll("[,.\\!\\?]", "");
-			}
 
 			// Stuff for the Rhyming Dictionary later
 			if (!setMap.containsKey(words[1])) {
@@ -65,6 +62,7 @@ public class RCFileReader {
 
 			// Lyric Map
 			for (int i = words.length - 1; i >= 3; i--) {
+				//keys do not have punctuation, values do
 				lyricMap.addWords(words[i], words[i - 1]);
 			}
 
