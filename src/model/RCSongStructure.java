@@ -45,6 +45,7 @@ public class RCSongStructure {
 
 		currentElement = new LargeSongElement(SongElementType.VERSE);
 		currentScheme = currentElement.getRhymeStructure();
+		verseSchemes.add(currentScheme);
 	}
 
 	/**
@@ -57,6 +58,7 @@ public class RCSongStructure {
 
 		currentElement = new LargeSongElement(SongElementType.BREAK);
 		currentScheme = currentElement.getRhymeStructure();
+		verseSchemes.add(currentScheme);
 	}
 	
 	/**
@@ -67,6 +69,7 @@ public class RCSongStructure {
 
 		currentElement = new LargeSongElement(SongElementType.BRIDGE);
 		currentScheme = currentElement.getRhymeStructure();
+		bridgeSchemes.add(currentScheme);
 	}
 	
 	/**
@@ -78,6 +81,7 @@ public class RCSongStructure {
 
 		currentElement = new LargeSongElement(SongElementType.INTRO);
 		currentScheme = currentElement.getRhymeStructure();
+		bridgeSchemes.add(currentScheme);
 	}
 
 	/**
@@ -89,6 +93,7 @@ public class RCSongStructure {
 
 		currentElement = new LargeSongElement(SongElementType.OUTRO);
 		currentScheme = currentElement.getRhymeStructure();
+		bridgeSchemes.add(currentScheme);
 	}
 
 	/**
@@ -101,6 +106,7 @@ public class RCSongStructure {
 
 		currentElement = new LargeSongElement(SongElementType.CHORUS);
 		currentScheme = currentElement.getRhymeStructure();
+		chorusSchemes.add(currentScheme);
 	}
 
 	/**

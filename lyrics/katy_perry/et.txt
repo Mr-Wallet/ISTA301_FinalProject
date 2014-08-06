@@ -1,0 +1,84 @@
+intro	AA	You're so hypnotizing
+.		AB	Could you be the devil?
+.		AB	Could you be an angel?
+
+.		AA	Your touch magnetizing
+.		AC	Feels like I am floating
+.		AC	Leaves my body glowing
+
+verse	BA	They say, be afraid
+.		BB	You're not like the others
+.		BB	Futuristic lover
+.		BA	Different DNA
+.		BC	They don't understand you
+
+bridge	CA	You're from a whole 'nother world
+.		CB	A different dimension
+.		CC	You open my eyes
+.		CC	And I'm ready to go lead me into the light
+
+chorus	DA	Kiss me, ki-ki-kiss me
+.		DB	Infect me with your love and
+.		DB	Fill me with your poison
+
+.		DA	Take me, ta-ta-take me
+.		DC	Wanna be a victim
+.		DC	Ready for abduction
+
+.		DD	Boy, you're an alien
+.		DD	Your touch so foreign
+.		DE	It's supernatural
+.		DE	Extraterrestrial
+
+verse	EA	You're so supersonic
+.		EB	Wanna feel your powers
+.		EB	Stun me with your lasers
+.		EA	Your kiss is cosmic
+.		EC	Every move is magic
+
+bridge	FA	You're from a whole 'nother world
+.		FB	A different dimension
+.		FC	You open my eyes
+.		FC	And I'm ready to go lead me into the light
+
+chorus	GA	Kiss me, ki-ki-kiss me
+.		GB	Infect me with your love and
+.		GB	Fill me with your poison
+
+.		GA	Take me, ta-ta-take me
+.		GC	Wanna be a victim
+.		GC	Ready for abduction
+
+.		GD	Boy, you're an alien
+.		GD	Your touch so foreign
+.		GE	It's supernatural
+.		GE	Extraterrestrial
+
+break	HA	This is transcendental
+.		HA	On another level
+.		HB	Boy, you're my lucky star
+
+.		HC	I wanna walk on your wave length
+.		HC	And be there when you vibrate
+.		HB	For you I'll risk it all
+
+chorus	IA	Kiss me, ki-ki-kiss me
+.		IB	Infect me with your love and
+.		IB	Fill me with your poison
+
+.		IA	Take me, ta-ta-take me
+.		IC	Wanna be a victim
+.		IC	Ready for abduction
+
+.		ID	Boy, you're an alien
+.		ID	Your touch so foreign
+.		IE	It's supernatural
+.		IE	Extraterrestrial
+
+outro	JA	Extraterrestrial
+.		JA	Extraterrestrial
+
+.		JB	Boy, you're an alien
+.		JB	Your touch so foreign
+.		JC	It's supernatural
+.		JC	Extraterrestrial 

@@ -51,7 +51,7 @@ public class RCFileReader {
 			if (str.isEmpty())
 				continue;
 
-			String[] words = str.toLowerCase().split("\\s+");
+			String[] words = str.toLowerCase().replaceAll("[,\\.\\!\\?]", "").split("\\s+");
 
 			// Stuff for the Rhyming Dictionary later
 			if (!setMap.containsKey(words[1])) {
