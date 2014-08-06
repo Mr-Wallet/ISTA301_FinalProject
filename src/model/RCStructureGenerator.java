@@ -47,9 +47,10 @@ public class RCStructureGenerator {
 				}
 				List<String> currentRhymeSet = rhymeSets.get(i);
 
-				String randomWord = currentRhymeSet.get(rnd.nextInt(rhymeSets.size()));
-				while (lastWords.contains(randomWord))
-					currentRhymeSet.get(rnd.nextInt(rhymeSets.size()));
+				String randomWord = currentRhymeSet.get(rnd.nextInt(currentRhymeSet.size()));
+				//TODO make the system aware of when repetition is OK
+				//while (lastWords.contains(randomWord))
+				//	currentRhymeSet.get(rnd.nextInt(currentRhymeSet.size()));
 
 				lastWords.add(randomWord);
 			}

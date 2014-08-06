@@ -51,7 +51,10 @@ public class RCFileReader {
 			if (str.isEmpty())
 				continue;
 
-			String[] words = str.toLowerCase().replaceAll("[,\\.\\!\\?]", "").split("\\s+");
+			String[] words = str.toLowerCase().split("\\s+");
+			for(int i = 2; i < words.length; i++) {
+				words[i] = words[i].replaceAll("[,.\\!\\?]", "");
+			}
 
 			// Stuff for the Rhyming Dictionary later
 			if (!setMap.containsKey(words[1])) {
@@ -66,6 +69,10 @@ public class RCFileReader {
 			}
 
 			// Song Structure
+			if(words[0].equals(".")) {
+				
+			}
+			
 			switch (words[0].toLowerCase()) { // requires Java 7
 			case "verse":
 				songStruc.startNewVerse();
@@ -98,8 +105,6 @@ public class RCFileReader {
 		for (String str : setMap.keySet()) {
 			rhymeDict.addWords(setMap.get(str));
 		}
-
-		// lyricMap.printMap();
 
 	}
 

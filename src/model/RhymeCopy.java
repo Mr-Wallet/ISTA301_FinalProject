@@ -40,9 +40,10 @@ public class RhymeCopy {
 
 		File[] lyricFiles = new File(args[0]).listFiles();
 		for (File file : lyricFiles) {
+			if (file.isDirectory())
+				continue;
 			RCFileReader.setGeneration(file);
 		}
-
 
 		RCStructureGenerator.setRhymeDictionary(rhymeDict);
 		RCStructureGenerator.setSongStructure(songStruct);
@@ -53,19 +54,19 @@ public class RhymeCopy {
 		RCLineGenerator.setLyricMap(lyricMap);
 		for (LargeSongElement el : songElements) {
 			List<String> lines = el.getLines();
-			if(!lines.isEmpty()) //repetition, probably chorus
+			if (!lines.isEmpty()) // repetition, probably chorus
 				continue;
-				
+
 			for (String lastWord : el.getLastWords()) {
 				lines.add(RCLineGenerator.generateLine(lastWord));
 			}
 		}
 
-		
-		for(LargeSongElement el : songElements) {
+		for (LargeSongElement el : songElements) {
+			outputSong.add(el.getSongElementTypeAsString());
 			outputSong.addAll(el.getLines());
+			outputSong.add("");
 		}
-
 
 		RCFileWriter.writeSong(OUTPUT_FILE_PATH, outputSong);
 	}

@@ -144,33 +144,33 @@ public class RCSongStructure {
 		songBreak.setRhymeStructure(verseSchemes.get(rnd.nextInt(verseSchemes.size())));
 
 		LargeSongElement songBridge = new LargeSongElement(SongElementType.BRIDGE);
-		songBreak.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
+		songBridge.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
 		
 		LargeSongElement songIntro = new LargeSongElement(SongElementType.INTRO);
-		songBreak.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
+		songIntro.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
 		
 		LargeSongElement songOutro = new LargeSongElement(SongElementType.OUTRO);
-		songBreak.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
+		songOutro.setRhymeStructure(bridgeSchemes.get(rnd.nextInt(bridgeSchemes.size())));
 		
 		for(SongElementType elType : overallForm) {
 			switch(elType) {
 				case VERSE:
-					result.add(songVerse);
+					result.add(songVerse.getSchemeCopy());
 					break;
 				case CHORUS:
 					result.add(songChorus);
 					break;
 				case BREAK:
-					result.add(songBreak);
+					result.add(songBreak.getSchemeCopy());
 					break;
 				case BRIDGE:
 					result.add(songBridge);
 					break;
 				case INTRO:
-					result.add(songIntro);
+					result.add(songIntro.getSchemeCopy());
 					break;
 				case OUTRO:
-					result.add(songOutro);
+					result.add(songOutro.getSchemeCopy());
 					break;
 			}
 		}

@@ -9,15 +9,17 @@ public class RCLyricMap {
 	private HashMap<String, ArrayList<String>> textMap;
 	private Random rnd; // used to get random words
 
-	public void addWords(String wordKey, String wordValue) {
-
+	public RCLyricMap() {
 		textMap = new HashMap<String, ArrayList<String>>();
 		rnd = new Random();
 
-		ArrayList<String> array;
+	}
+	
+	public void addWords(String wordKey, String wordValue) {
+		
 
 		if (!textMap.containsKey(wordKey)) {
-			textMap.put(wordKey, array = new ArrayList<String>());
+			textMap.put(wordKey, new ArrayList<String>());
 		}
 
 		textMap.get(wordKey).add(wordValue);

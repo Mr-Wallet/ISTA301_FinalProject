@@ -19,6 +19,7 @@ public class RCLineGenerator {
 		return generateLine(lastWord, desiredWordCount);
 	}
 	
+	//TODO develop a sense of desired word count
 	public static String generateLine(String lastWord, int desiredWordCount) {
 		if(lyricMap == null) {
 			throw new NullPointerException("You forgot to set RCLineGenerator's lyric map");
