@@ -1,12 +1,15 @@
 package model;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class RCRhymeDictionary {
 
 	private ArrayList<ArrayList<String>> rhymeList = new ArrayList<ArrayList<String>>();
+	private Map<String, RhymeString> rhymeObjectMap = new HashMap<String, RhymeString>();
 
 	public List<String> getRandomRhymeList() {
 
@@ -22,6 +25,17 @@ public class RCRhymeDictionary {
 
 	public void addWords(ArrayList<String> arrayList) {
 
+		//set words to rhyme with themselves if necessary before adding
+		for(String word : arrayList) {
+			if(!rhymeObjectMap.containsKey(word)) {
+				rhymeObjectMap.put(word, new RhymeString(word));
+			}
+			if(arrayList.indexOf(word) != arrayList.lastIndexOf(word)) {
+				rhymeObjectMap.get(word).setRhymesWithItself(true);
+			}
+		}
+		
+		
 		boolean found = false;
 
 		if(rhymeList.isEmpty()){
@@ -77,7 +91,6 @@ public class RCRhymeDictionary {
 		// rhymeList. If not, it will create a new group of rhymes.
 		if (found == false)
 			rhymeList.add(arrayList);
-
 		
 
 	}

@@ -1,0 +1,80 @@
+intro	AA	Yeah
+.		AB	Ya'll know what it is
+.		AC	Katy Perry
+.		AD	Juicy J, aha.
+.		AE	Let's rage
+
+verse	BA	I knew you were
+.		BA	You were gonna come to me
+.		BA	And here you are
+.		BA	But you better choose carefully
+.		BA	‘Cause I, I’m capable of anything
+.		BA	Of anything and everything
+
+.		CA	Make me your Aphrodite
+.		CA	Make me your one and only
+.		CA	But don’t make me your enemy, your enemy, your enemy
+
+chorus	DA	So you wanna play with magic
+.		DB	Boy, you should know what you're falling for
+.		DC	Baby do you dare to do this?
+.		DB	Cause I’m coming at you like a dark horse
+.		DD	Are you ready for, ready for
+.		DD	A perfect storm, perfect storm
+.		DE	Cause once you’re mine, once you’re mine
+.		DF	There’s no going back
+
+.		EA	Mark my words
+.		EA	This love will make you levitate
+.		EA	Like a bird
+.		EA	Like a bird without a cage
+.		EA	But down to earth
+.		EA	If you choose to walk away, don’t walk away
+
+.		FA	It’s in the palm of your hand now baby
+.		FA	It’s a yes or no, no maybe
+.		FA	So just be sure before you give it all to me
+.		FA	All to me, give it all to me
+
+chorus	GA	So you wanna play with magic
+.		GB	Boy, you should know what you're falling for
+.		GC	Baby do you dare to do this?
+.		GB	Cause I’m coming at you like a dark horse
+.		GD	Are you ready for, ready for
+.		GD	A perfect storm, perfect storm
+.		GE	Cause once you’re mine, once you’re mine
+.		GF	There’s no going back
+
+break	HA	She’s a beast
+.		HA	I call her Karma
+.		HA	She eats your heart out
+.		HA	Like Jeffrey Dahmer
+.		HA	Be careful
+.		HA	Try not to lead her on
+.		HA	Shorty’s heart is on steroids
+.		HA	Cause her love is so strong
+.		HA	You may fall in love
+.		HA	When you meet her
+.		HA	If you get the chance you better keep her
+.		HA	She's sweet as pie but if you break her heart
+.		HA	She'll turn cold as a freezer
+.		HA	That fairy tale ending with a knight in shining armor
+.		HA	She can be my Sleeping Beauty
+.		HA	I’m gon’ put her in a coma
+.		HA	Damn I think I love her
+.		HA	Shorty so bad, I’m sprung and I don’t care
+.		HA	She ride me like a roller coaster
+.		HA	Turned the bedroom into a fair
+.		HA	Her love is like a drug
+.		HA	I was tryna hit it and quit it
+.		HA	But lil' mama so dope
+.		HA	I messed around and got addicted
+
+chorus	IA	So you wanna play with magic
+.		IB	Boy, you should know what you're falling for
+.		IC	Baby do you dare to do this?
+.		IB	Cause I’m coming at you like a dark horse
+.		ID	Are you ready for, ready for
+.		ID	A perfect storm, perfect storm
+.		IE	Cause once you’re mine, once you’re mine
+.		IF	There’s no going back
