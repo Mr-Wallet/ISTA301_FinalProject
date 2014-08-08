@@ -35,19 +35,6 @@ public class RCLineGenerator {
 			newWord = "I" + newWord.substring(1);
 		result = newWord + " " + result;
 		
-		String beforeLastWord = lastWord;
-		lastWord = newWord;
-	
-		//now switch to using 2 words as the key
-		while(wordCount(result) < desiredWordCount && lyricMap.hasPreviousWord(beforeLastWord + " " + lastWord)) {
-			newWord = lyricMap.getRandomPreviousWord(beforeLastWord + " " + lastWord);
-			if(newWord.replaceAll("\\p{Punct}", "").toLowerCase().equals("i") || newWord.toLowerCase().startsWith("i'"))
-				newWord = "I" + newWord.substring(1);
-			result = newWord + " " + result;
-			beforeLastWord = lastWord;
-			lastWord = newWord;
-		}
-		
 		return result.substring(0,1).toUpperCase() + result.substring(1);
 	}
 	
