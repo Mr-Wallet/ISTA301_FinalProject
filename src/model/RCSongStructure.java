@@ -13,19 +13,19 @@ import java.util.Random;
 public class RCSongStructure {
 
 	private List<List<SongElementType>> songSchemes = new ArrayList<List<SongElementType>>();
-	private List<List<Integer>> verseSchemes = new ArrayList<List<Integer>>();
-	private List<List<Integer>> chorusSchemes = new ArrayList<List<Integer>>();
-	private List<List<Integer>> bridgeSchemes = new ArrayList<List<Integer>>();
+	private List<List<RhymeLengthTuple>> verseSchemes = new ArrayList<List<RhymeLengthTuple>>();
+	private List<List<RhymeLengthTuple>> chorusSchemes = new ArrayList<List<RhymeLengthTuple>>();
+	private List<List<RhymeLengthTuple>> bridgeSchemes = new ArrayList<List<RhymeLengthTuple>>();
 
 	private List<SongElementType> currentSong;
 	private LargeSongElement currentElement;
-	private List<Integer> currentScheme;
+	private List<RhymeLengthTuple> currentScheme;
 	
 	public RCSongStructure() {
 		songSchemes = new ArrayList<List<SongElementType>>();
-		verseSchemes = new ArrayList<List<Integer>>();
-		chorusSchemes = new ArrayList<List<Integer>>();		
-		bridgeSchemes = new ArrayList<List<Integer>>();		
+		verseSchemes = new ArrayList<List<RhymeLengthTuple>>();
+		chorusSchemes = new ArrayList<List<RhymeLengthTuple>>();		
+		bridgeSchemes = new ArrayList<List<RhymeLengthTuple>>();		
 	}
 
 	/**
@@ -114,12 +114,12 @@ public class RCSongStructure {
 	 * song element.
 	 * 
 	 * @param rhymeIndex
-	 *            a number corresponding to the rhyme; start at 0 and count up
+	 *            a RhymeLengthTuple with a number corresponding to the rhyme; start at 0 and count up
 	 *            whenever a new word is encountered that doesn't rhyme with a
 	 *            previous word in the same verse/chorus.
 	 */
-	public void addLine(int rhymeIndex) {
-		currentScheme.add(rhymeIndex);
+	public void addLine(int rhymeIndex, int lineLength) {
+		currentScheme.add(new RhymeLengthTuple(rhymeIndex, lineLength));
 	}
 
 	/**

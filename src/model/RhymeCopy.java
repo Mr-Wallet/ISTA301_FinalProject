@@ -49,7 +49,6 @@ public class RhymeCopy {
 		RCStructureGenerator.setSongStructure(songStruct);
 		List<LargeSongElement> songElements = RCStructureGenerator
 				.generateSongSkeleton();
-		List<String> outputSong = new ArrayList<String>();
 
 		RCLineGenerator.setLyricMap(lyricMap);
 		for (LargeSongElement el : songElements) {
@@ -57,11 +56,14 @@ public class RhymeCopy {
 			if (!lines.isEmpty()) // repetition, probably chorus
 				continue;
 
-			for (String lastWord : el.getLastWords()) {
-				lines.add(RCLineGenerator.generateLine(lastWord));
+			List<String> lastWords = el.getLastWords();
+			List<Integer> lineLengths = el.getLineLengths();
+			for (int i = 0; i < lastWords.size(); i++) {
+				lines.add(RCLineGenerator.generateLine(lastWords.get(i), lineLengths.get(i)));
 			}
 		}
 
+		List<String> outputSong = new ArrayList<String>();
 		for (LargeSongElement el : songElements) {
 			outputSong.add(el.getSongElementTypeAsString());
 			outputSong.addAll(el.getLines());

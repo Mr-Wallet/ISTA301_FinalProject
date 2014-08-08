@@ -70,11 +70,7 @@ public class RCFileReader {
 				lyricMap.addWords(words[i], words[i - 1]);
 			}
 
-			// Song Structure
-			if(words[0].equals(".")) {
-				
-			}
-			
+			// Song Structure			
 			switch (words[0].toLowerCase()) { // requires Java 7
 			case "verse":
 				songStruc.startNewVerse();
@@ -99,7 +95,7 @@ public class RCFileReader {
 			if(!rhymeStructureSymbols.contains(words[1])) {
 				rhymeStructureSymbols.add(words[1]);
 			}
-			songStruc.addLine(rhymeStructureSymbols.indexOf(words[1]));
+			songStruc.addLine(rhymeStructureSymbols.indexOf(words[1]), getLyricLineLength(str));
 		}
 
 		
@@ -110,4 +106,11 @@ public class RCFileReader {
 
 	}
 
+	/**
+	 * @param str a full line of an annotated lyric file
+	 * @return the number of non-punctuation non-whitespace characters in the actual un-annotated lyrics
+	 */
+	private static int getLyricLineLength(String str) {
+		return str.substring(2).toLowerCase().replaceAll("\\p{Punct}", "").replaceAll("\\s+", "").length();
+	}
 }
