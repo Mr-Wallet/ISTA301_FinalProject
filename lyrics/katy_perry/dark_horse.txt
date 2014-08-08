@@ -5,15 +5,20 @@ intro	AA	Yeah
 .		AE	Let's rage
 
 verse	BA	I knew you were
-.		BA	You were gonna come to me
-.		BA	And here you are
-.		BA	But you better choose carefully
-.		BA	‘Cause I, I’m capable of anything
-.		BA	Of anything and everything
+.		BB	You were gonna come to me
+.		BC	And here you are
+.		BB	But you better choose carefully
+.		BD	‘Cause I
+.		BE	I’m capable of anything
+.		BE	Of anything
+.		BE	and everything
 
 .		CA	Make me your Aphrodite
-.		CA	Make me your one and only
-.		CA	But don’t make me your enemy, your enemy, your enemy
+.		CB	Make me your one and only
+.		CC	But don’t
+.		CB	make me your enemy
+.		CB	your enemy
+.		CB	your enemy
 
 chorus	DA	So you wanna play with magic
 .		DB	Boy, you should know what you're falling for
@@ -24,17 +29,19 @@ chorus	DA	So you wanna play with magic
 .		DE	Cause once you’re mine, once you’re mine
 .		DF	There’s no going back
 
-.		EA	Mark my words
-.		EA	This love will make you levitate
+verse	EA	Mark my words
+.		EB	This love will make you levitate
 .		EA	Like a bird
-.		EA	Like a bird without a cage
+.		EB	Like a bird without a cage
 .		EA	But down to earth
-.		EA	If you choose to walk away, don’t walk away
+.		EB	If you choose to walk away
+.		EB	don’t walk away
 
 .		FA	It’s in the palm of your hand now baby
 .		FA	It’s a yes or no, no maybe
-.		FA	So just be sure before you give it all to me
-.		FA	All to me, give it all to me
+.		FB	So just be sure
+.		FC	before you give it all to me
+.		FC	All to me, give it all to me
 
 chorus	GA	So you wanna play with magic
 .		GB	Boy, you should know what you're falling for
@@ -45,30 +52,20 @@ chorus	GA	So you wanna play with magic
 .		GE	Cause once you’re mine, once you’re mine
 .		GF	There’s no going back
 
-break	HA	She’s a beast
-.		HA	I call her Karma
-.		HA	She eats your heart out
-.		HA	Like Jeffrey Dahmer
-.		HA	Be careful
-.		HA	Try not to lead her on
-.		HA	Shorty’s heart is on steroids
-.		HA	Cause her love is so strong
-.		HA	You may fall in love
-.		HA	When you meet her
-.		HA	If you get the chance you better keep her
-.		HA	She's sweet as pie but if you break her heart
-.		HA	She'll turn cold as a freezer
-.		HA	That fairy tale ending with a knight in shining armor
-.		HA	She can be my Sleeping Beauty
-.		HA	I’m gon’ put her in a coma
-.		HA	Damn I think I love her
-.		HA	Shorty so bad, I’m sprung and I don’t care
-.		HA	She ride me like a roller coaster
-.		HA	Turned the bedroom into a fair
-.		HA	Her love is like a drug
-.		HA	I was tryna hit it and quit it
-.		HA	But lil' mama so dope
-.		HA	I messed around and got addicted
+break	HA	She’s a beast,	I call her Karma
+.		HA	She eats your heart out	like Jeffrey Dahmer
+.		HB	Be careful, try not to lead her on
+.		HB	Shorty’s heart is on steroids 'cause her love is so strong
+.		HC	You may fall in love, when you meet her
+.		HC	If you get the chance you better keep her
+.		HD	She's sweet as pie but if you break her heart
+.		HC	She'll turn cold as a freezer
+.		HD	That fairy tale ending with a knight in shining armor
+.		HD	She can be my Sleeping Beauty, I’m gon’ put her in a coma
+.		HE	Damn I think I love her, shorty so bad, I’m sprung and I don’t care
+.		HE	She ride me like a roller coaster turned the bedroom into a fair
+.		HF	Her love is like a drug I was tryna hit it and quit it
+.		HF	But lil' mama so dope I messed around and got addicted
 
 chorus	IA	So you wanna play with magic
 .		IB	Boy, you should know what you're falling for
