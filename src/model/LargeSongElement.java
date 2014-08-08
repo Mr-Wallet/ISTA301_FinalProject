@@ -10,13 +10,13 @@ import java.util.List;
  */
 public class LargeSongElement {
 	private SongElementType type;
-	private List<Integer> rhymeStructure;
+	private List<RhymeLengthTuple> rhymeStructure;
 	private List<String> lastWords;
 	private List<String> songLines;
 
 	public LargeSongElement(SongElementType type) {
 		this.type = type;
-		rhymeStructure = new ArrayList<Integer>();
+		rhymeStructure = new ArrayList<RhymeLengthTuple>();
 		lastWords = new ArrayList<String>();
 		songLines = new ArrayList<String>();
 	}
@@ -25,11 +25,11 @@ public class LargeSongElement {
 		return type;
 	}
 
-	public List<Integer> getRhymeStructure() {
+	public List<RhymeLengthTuple> getRhymeStructure() {
 		return rhymeStructure;
 	}
 
-	public void setRhymeStructure(List<Integer> rhymeStructure) {
+	public void setRhymeStructure(List<RhymeLengthTuple> rhymeStructure) {
 		this.rhymeStructure = rhymeStructure;
 	}
 

@@ -32,7 +32,7 @@ public class RCStructureGenerator {
 		//now generate each verse, inserting choruses as needed
 		for (LargeSongElement lse : songStructure) {
 			List<List<String>> rhymeSets = new ArrayList<List<String>>();
-			List<Integer> rhymeStructure = lse.getRhymeStructure();
+			List<RhymeLengthTuple> rhymeStructure = lse.getRhymeStructure();
 			List<String> lastWords = lse.getLastWords();
 			
 			if(lse.getSongElementType() == SongElementType.CHORUS && chorusElement != null) {
@@ -41,14 +41,16 @@ public class RCStructureGenerator {
 			}
 			
 			//grab a random rhymeSet for each structure; we'll fix it in the next loop if it's too small
-			for (Integer i : rhymeStructure) {
+			for (RhymeLengthTuple t : rhymeStructure) {
+				int i = t.getRhymeType();
 				while (i >= rhymeSets.size()) {
 					rhymeSets.add(rhymeDict.getRandomRhymeList());
 				}
 			}
 			
 			// generate each line
-			for (Integer i : rhymeStructure) {
+			for (RhymeLengthTuple t : rhymeStructure) {
+				int i = t.getRhymeType();
 				while (uniqueElements(rhymeSets.get(i)) < occurencesOf(rhymeStructure, i)) {
 					List<String> randomRhymeSet = rhymeDict.getRandomRhymeList();
 					rhymeSets.set(i, randomRhymeSet);
@@ -73,9 +75,10 @@ public class RCStructureGenerator {
 		return result;
 	}
 
-	private static int occurencesOf(List<Integer> rhymeStructure, Integer i) {
+	private static int occurencesOf(List<RhymeLengthTuple> rhymeStructure, Integer i) {
 		int result = 0;
-		for(Integer j : rhymeStructure) {
+		for (RhymeLengthTuple t : rhymeStructure) {
+			Integer j = t.getRhymeType();
 			if(j.equals(i)) result++;
 		}
 		
