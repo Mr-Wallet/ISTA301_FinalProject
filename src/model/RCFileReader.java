@@ -74,21 +74,27 @@ public class RCFileReader {
 			switch (words[0].toLowerCase()) { // requires Java 7
 			case "verse":
 				songStruc.startNewVerse();
+				rhymeStructureSymbols = new ArrayList<String>();
 				break;
 			case "chorus":
 				songStruc.startNewChorus();
+				rhymeStructureSymbols = new ArrayList<String>();
 				break;
 			case "break":
 				songStruc.startNewBreak();
+				rhymeStructureSymbols = new ArrayList<String>();
 				break;
 			case "bridge":
 				songStruc.startNewBridge();
+				rhymeStructureSymbols = new ArrayList<String>();
 				break;
 			case "intro":
 				songStruc.startNewIntro();
+				rhymeStructureSymbols = new ArrayList<String>();
 				break;
 			case "outro":
 				songStruc.startNewOutro();
+				rhymeStructureSymbols = new ArrayList<String>();
 				break;
 			}
 			

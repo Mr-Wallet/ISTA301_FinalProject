@@ -26,4 +26,8 @@ public class RhymeLengthTuple {
 		this.lineLength = lineLength;
 	}
 	
+	public String toString() {
+		return "<" + rhymeType + "," + lineLength + ">";
+	}
+	
 }

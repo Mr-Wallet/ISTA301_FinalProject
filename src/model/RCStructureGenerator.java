@@ -26,10 +26,11 @@ public class RCStructureGenerator {
 
 		List<LargeSongElement> songStructure = songStruct
 				.generateRandomSongStructure();
-		
-		LargeSongElement chorusElement = null;
 
-		//now generate each verse, inserting choruses as needed
+		LargeSongElement chorusElement = null;
+		LargeSongElement bridgeElement = null;
+
+		//now generate each verse, inserting choruses and bridges as needed
 		for (LargeSongElement lse : songStructure) {
 			List<List<String>> rhymeSets = new ArrayList<List<String>>();
 			List<RhymeLengthTuple> rhymeStructure = lse.getRhymeStructure();
@@ -37,6 +38,11 @@ public class RCStructureGenerator {
 			
 			if(lse.getSongElementType() == SongElementType.CHORUS && chorusElement != null) {
 				result.add(chorusElement);
+				continue;
+			}
+			
+			if(lse.getSongElementType() == SongElementType.BRIDGE && bridgeElement != null) {
+				result.add(bridgeElement);
 				continue;
 			}
 			
@@ -49,13 +55,15 @@ public class RCStructureGenerator {
 			}
 			
 			// generate each line
+			List<List<String>> setsAlreadyUsed = new ArrayList<List<String>>();
 			for (RhymeLengthTuple t : rhymeStructure) {
 				int i = t.getRhymeType();
-				while (uniqueElements(rhymeSets.get(i)) < occurencesOf(rhymeStructure, i)) {
+				while (setsAlreadyUsed.contains(rhymeSets.get(i)) || uniqueElements(rhymeSets.get(i)) < occurencesOf(rhymeStructure, i)) {
 					List<String> randomRhymeSet = rhymeDict.getRandomRhymeList();
 					rhymeSets.set(i, randomRhymeSet);
 				}
 				List<String> currentRhymeSet = rhymeSets.get(i);
+				setsAlreadyUsed.add(currentRhymeSet);
 
 				String randomWord = currentRhymeSet.get(rnd.nextInt(currentRhymeSet.size()));
 				//if the randomWord matches a previous one, and doesn't rhyme with itself, keep drawing words
@@ -68,6 +76,9 @@ public class RCStructureGenerator {
 			
 			if(lse.getSongElementType() == SongElementType.CHORUS) {
 				chorusElement = lse;
+			}
+			if(lse.getSongElementType() == SongElementType.BRIDGE) {
+				bridgeElement = lse;
 			}
 			result.add(lse);
 		}

@@ -13,6 +13,10 @@ public class LargeSongElement {
 	private List<RhymeLengthTuple> rhymeStructure;
 	private List<String> lastWords;
 	private List<String> songLines;
+	
+	public String toString() {
+		return type + " // " + rhymeStructure + " // " + lastWords;
+	}
 
 	public LargeSongElement(SongElementType type) {
 		this.type = type;
@@ -77,7 +81,11 @@ public class LargeSongElement {
 
 	public LargeSongElement getSchemeCopy() {
 		LargeSongElement result = new LargeSongElement(getSongElementType());
-		result.setRhymeStructure(getRhymeStructure());
+		List<RhymeLengthTuple> copyList = new ArrayList<RhymeLengthTuple>();
+		for(RhymeLengthTuple t : getRhymeStructure()) {
+			copyList.add(new RhymeLengthTuple(t.getRhymeType(), t.getLineLength()));
+		}
+		result.setRhymeStructure(copyList);
 				
 		return result;
 	}
