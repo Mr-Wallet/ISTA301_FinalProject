@@ -67,7 +67,7 @@ public class RCFileReader {
 			for (int i = words.length - 1; i >= 3; i--) {
 				//keys do not have punctuation, values do
 			
-				lyricMap.addWords(words[i], words[i -1]);
+				lyricMap.addWords(words[i], words[i - 1]);
 			}
 
 			// Song Structure
