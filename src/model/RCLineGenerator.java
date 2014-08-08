@@ -1,28 +1,17 @@
 package model;
 
-import java.util.Random;
-
 /**
  * Takes a word and then generates a line of appropriate length behind it.
  */
 public class RCLineGenerator {
 	private static RCLyricMap lyricMap;
-	private static final int MIN_WORD_COUNT = 4;
-	private static final int MAX_WORD_COUNT = 13;
-	
-	private static int varTemp = 85;
 	
 	public static void setLyricMap(RCLyricMap map) {
 		lyricMap = map;
 	}
 	
-	public static String generateLine(String lastWord) {
-		int desiredWordCount = MIN_WORD_COUNT + (new Random()).nextInt(MAX_WORD_COUNT - MIN_WORD_COUNT);
-		return generateLine(lastWord, desiredWordCount);
-	}
-	
 	//TODO develop a sense of desired word count
-	public static String generateLine(String lastWord, int desiredWordCount) {
+	public static String generateLine(String lastWord, int desiredLetterCount) {
 		if(lyricMap == null) {
 			throw new NullPointerException("You forgot to set RCLineGenerator's lyric map");
 		}
@@ -37,11 +26,11 @@ public class RCLineGenerator {
 			
 			String tempWord = newWord + " " + result;
 			
-			if(countLetter(tempWord) < varTemp){
+			if(countLetter(tempWord) < desiredLetterCount){
 				result = tempWord;
 			}
 			else{
-				if(Math.abs(countLetter(tempWord) - varTemp) < Math.abs(countLetter(result) - varTemp))
+				if(Math.abs(countLetter(tempWord) - desiredLetterCount) < Math.abs(countLetter(result) - desiredLetterCount))
 					result = tempWord;
 				break;
 			}
