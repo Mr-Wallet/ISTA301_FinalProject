@@ -81,4 +81,12 @@ public class LargeSongElement {
 				
 		return result;
 	}
+
+	public List<Integer> getLineLengths() {
+		List<Integer> result = new ArrayList<Integer>();
+		for(RhymeLengthTuple t : rhymeStructure) {
+			result.add(t.getLineLength());
+		}
+		return result;
+	}
 }
