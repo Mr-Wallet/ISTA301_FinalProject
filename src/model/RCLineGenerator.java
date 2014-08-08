@@ -25,15 +25,18 @@ public class RCLineGenerator {
 			throw new NullPointerException("You forgot to set RCLineGenerator's lyric map");
 		}
 		
-		//start up generation by using a single word as the key
-		String result = lastWord;
-		if(wordCount(result) > desiredWordCount || !lyricMap.hasPreviousWord(lastWord)) {
-			return result;
+		String result = lastWord;	
+		
+		//now switch to using 2 words as the key
+		while(wordCount(result) < desiredWordCount && lyricMap.hasPreviousWord(lastWord)) {
+			String newWord = lyricMap.getRandomPreviousWord(lastWord);
+			if(newWord.replaceAll("\\p{Punct}", "").toLowerCase().equals("i") || newWord.toLowerCase().startsWith("i'"))
+				newWord = "I" + newWord.substring(1);
+			result = newWord + " " + result;
+	
+			lastWord = newWord;
 		}
-		String newWord = lyricMap.getRandomPreviousWord(lastWord);
-		if(newWord.replaceAll("\\p{Punct}", "").toLowerCase().equals("i") || newWord.toLowerCase().startsWith("i'"))
-			newWord = "I" + newWord.substring(1);
-		result = newWord + " " + result;
+		
 		
 		return result.substring(0,1).toUpperCase() + result.substring(1);
 	}
