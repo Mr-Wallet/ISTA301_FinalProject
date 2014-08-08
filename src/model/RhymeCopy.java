@@ -47,8 +47,12 @@ public class RhymeCopy {
 
 		RCStructureGenerator.setRhymeDictionary(rhymeDict);
 		RCStructureGenerator.setSongStructure(songStruct);
-		List<LargeSongElement> songElements = RCStructureGenerator
-				.generateSongSkeleton();
+		List<LargeSongElement> songElements = null;
+		try {
+			songElements = RCStructureGenerator
+					.generateSongSkeleton();
+		} catch (Exception e) {
+		}
 
 		RCLineGenerator.setLyricMap(lyricMap);
 		for (LargeSongElement el : songElements) {
@@ -69,7 +73,7 @@ public class RhymeCopy {
 			outputSong.addAll(el.getLines());
 			outputSong.add("");
 		}
-
+		
 		RCFileWriter.writeSong(OUTPUT_FILE_PATH, outputSong);
 	}
 

@@ -1,0 +1,53 @@
+verse	AA	Doublewide Quick Stop
+.		AA	midnight T-top
+.		AB	Jack in her Cherry Coke town
+.		AC	Momma and daddy put their roots right here
+.		AB	'Cause this is where the car broke down
+.		AD	Yellow dog school bus
+.		AD	kickin' up red dust
+.		AE	Pickin' us up by a barbed wire fence
+.		AF	MTV on the RCA
+.		AE	no A/C in the vents
+
+chorus	BA	We were Jesus save me
+.		BA	blue jean baby
+.		BB	Born in the USA
+.		BC	Trailer park truck stop
+.		BC	faded little map dots
+.		BB	New York to LA
+.		BD	We were teenage dreamin'
+.		BD	front seat leanin'
+.		BE	Baby, come give me a kiss
+.		BF	Put me on the cover of the Rolling Stone
+.		BE	Uptown down home American kids
+.		BG	Growin' up in little pink houses
+.		BG	Makin' out on living room couches
+.		BH	Blowin' that smoke on Saturday night
+.		BH	A little messed up, but we're all alright
+
+verse	CA	Baptist church parkin' lot
+.		CA	tryin' not to get caught
+.		CB	Take her home and give her your jacket
+.		CC	Makin' it to second base
+.		CC	but sayin' you went all the way
+.		CB	Monday afternoon at practice
+.		CD	Sister's got a boyfriend daddy doesn't like
+.		CE	Now he's sittin' out back
+.		CE	3030 in his lap
+.		CD	In the blue bug zapper light
+
+chorus	DA	We were Jesus save me
+.		DA	blue jean baby
+.		DB	Born in the USA
+.		DC	Trailer park truck stop
+.		DC	faded little map dots
+.		DB	New York to LA
+.		DD	We were teenage dreamin'
+.		DD	front seat leanin'
+.		DE	Baby, come give me a kiss
+.		DF	Put me on the cover of the Rolling Stone
+.		DE	Uptown down home American kids
+.		DG	Growin' up in little pink houses
+.		DG	Makin' out on living room couches
+.		DH	Blowin' that smoke on Saturday night
+.		DH	A little messed up, but we're all alright
