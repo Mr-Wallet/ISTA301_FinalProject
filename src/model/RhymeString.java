@@ -13,16 +13,16 @@ public class RhymeString {
 		rhymesWithItself = false;
 	}
 	
-	public boolean rhymesWithItself() {
-		return rhymesWithItself;
-	}
-	
 	public String getValue() {
 		return value;
 	}
 	
 	public void setRhymesWithItself(boolean rhymesWithItself) {
 		this.rhymesWithItself = rhymesWithItself;
+	}
+	
+	public boolean getRhymesWithItself() {
+		return rhymesWithItself;
 	}
 	
 	public int hashCode() {

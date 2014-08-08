@@ -8,7 +8,7 @@ import java.util.Random;
 public class RCLineGenerator {
 	private static RCLyricMap lyricMap;
 	private static final int MIN_WORD_COUNT = 4;
-	private static final int MAX_WORD_COUNT = 13;;
+	private static final int MAX_WORD_COUNT = 13;
 	
 	public static void setLyricMap(RCLyricMap map) {
 		lyricMap = map;
@@ -24,12 +24,27 @@ public class RCLineGenerator {
 		if(lyricMap == null) {
 			throw new NullPointerException("You forgot to set RCLineGenerator's lyric map");
 		}
+		
+		//start up generation by using a single word as the key
 		String result = lastWord;
-		while(wordCount(result) < desiredWordCount && lyricMap.hasPreviousWord(lastWord)) {
-			String newWord = lyricMap.getRandomPreviousWord(lastWord);
+		if(wordCount(result) > desiredWordCount || !lyricMap.hasPreviousWord(lastWord)) {
+			return result;
+		}
+		String newWord = lyricMap.getRandomPreviousWord(lastWord);
+		if(newWord.replaceAll("\\p{Punct}", "").toLowerCase().equals("i") || newWord.toLowerCase().startsWith("i'"))
+			newWord = "I" + newWord.substring(1);
+		result = newWord + " " + result;
+		
+		String beforeLastWord = lastWord;
+		lastWord = newWord;
+	
+		//now switch to using 2 words as the key
+		while(wordCount(result) < desiredWordCount && lyricMap.hasPreviousWord(beforeLastWord + " " + lastWord)) {
+			newWord = lyricMap.getRandomPreviousWord(beforeLastWord + " " + lastWord);
 			if(newWord.replaceAll("\\p{Punct}", "").toLowerCase().equals("i") || newWord.toLowerCase().startsWith("i'"))
 				newWord = "I" + newWord.substring(1);
 			result = newWord + " " + result;
+			beforeLastWord = lastWord;
 			lastWord = newWord;
 		}
 		

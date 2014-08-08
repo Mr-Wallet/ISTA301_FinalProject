@@ -1,7 +1,7 @@
 intro	AA	Yeah
 .		AB	Ya'll know what it is
 .		AC	Katy Perry
-.		AD	Juicy J, aha.
+.		AD	Juicy J, aha
 .		AE	Let's rage
 
 verse	BA	I knew you were
