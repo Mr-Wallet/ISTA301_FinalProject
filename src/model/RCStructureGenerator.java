@@ -58,9 +58,14 @@ public class RCStructureGenerator {
 			List<List<String>> setsAlreadyUsed = new ArrayList<List<String>>();
 			for (RhymeLengthTuple t : rhymeStructure) {
 				int i = t.getRhymeType();
+				int giveUp = 0;
 				while (setsAlreadyUsed.contains(rhymeSets.get(i)) || uniqueElements(rhymeSets.get(i)) < occurencesOf(rhymeStructure, i)) {
 					List<String> randomRhymeSet = rhymeDict.getRandomRhymeList();
 					rhymeSets.set(i, randomRhymeSet);
+					giveUp++;
+					if(giveUp > 100) {
+						break; //give up
+					}
 				}
 				List<String> currentRhymeSet = rhymeSets.get(i);
 				setsAlreadyUsed.add(currentRhymeSet);
