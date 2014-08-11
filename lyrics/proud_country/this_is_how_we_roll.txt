@@ -1,4 +1,4 @@
-.		AA	The mixtape's
+verse		AA	The mixtape's
 .		AA	got a little Hank, little Drake
 .		AB	A little something bumping, thump, thumping on the wheel ride
 .		AC	The mix in our drink's
@@ -7,56 +7,56 @@
 .		AD	The truck's jacked up, flatbed's flipped back
 .		AD	Yeah, you can find us where the party's at
 
-.		BA	This is how we roll
+chorus		BA	This is how we roll
 .		BA	We hanging round singing out everything on the radio
 .		BB	We light it up with our hands up
 .		BC	This is how we roll
 .		BD	This is how we do
-.		BE	We're burning down the night
-.		BD	shooting bullets at the moon
+.		BD	We're burning down the night shooting bullets at the moon
 .		BA	This is how we roll
 
-.		CA	Yeah, baby, this is how we roll
+verse		CA	Yeah, baby, this is how we roll
 .		CB	We rollin' into town
 .		CB	With nothing else to do we take another lap around
-.		CA	Yeah, holler at your boy
-.		CA	if you need a ride
-.		CA	If you roll with me
-.		CA	yeah, you know we rollin' high
-.		CA	Up on them 37 Nittos
-.		CA	windows tinted hard to see though
-.		CA	How fresh my baby is in the shotgun seat, oh
-.		CA	Them kisses are for me though
-.		CA	automatic like a free throw
-.		CA	This life I live
-.		CA	it might not be for you but it's for me though
+.		CC	Yeah, holler at your boy
+.		CD	if you need a ride
+.		CE	If you roll with me
+.		CD	yeah, you know we rollin' high
 
-.		AA	This is how we roll
-.		AA	We hanging round singing out everything on the radio
-.		AA	We light it up with our hands up
-.		AA	This is how we roll
-.		AA	This is how we do
-.		AA	When the world turns ugly I just turn and look at you, baby
-.		AA	This is how we roll
+break		CF	Up on them 37 Nittos
+.		CF	windows tinted hard to see though
+.		CF	How fresh my baby is in the shotgun seat, oh
+.		CF	Them kisses are for me though
+.		CF	automatic like a free throw
+.		CG	This life I live
+.		CF	it might not be for you but it's for me though
 
-.		AA	Yeah, we're proud to be young
-.		AA	We stick to our guns
-.		AA	We love who we love and we wanna have fun
-.		AA	Yeah, we cuss on them Mondays
-.		AA	And pray on them Sundays
-.		AA	Pass it around and we dream of that one day
+chorus		BA	This is how we roll
+.		BA	We hanging round singing out everything on the radio
+.		BB	We light it up with our hands up
+.		BA	This is how we roll
+.		BD	This is how we do
+.		BD	When the world turns ugly I just turn and look at you
+.		BA	This is how we roll
 
-.		AA	'Cause this is how we roll
-.		AA	We hanging round singing out everything on the radio
-.		AA	We light it up with our hands up
-.		AA	This is how we roll
-.		AA	This is how we ride
-.		AA	We slingin' up the mud, cuttin' through the countryside, baby
-.		AA	This is how we roll
+verse		DA	Yeah, we're proud to be young
+.		DA	We stick to our guns
+.		DA	We love who we love and we wanna have fun
+.		DB	Yeah, we cuss on them Mondays
+.		DB	And pray on them Sundays
+.		DB	Pass it around and we dream of that one day
 
-.		AA	Yeah, this is how we roll
-.		AA	This is how we roll
-.		AA	This is how we do
-.		AA	We're burning down the night shooting bullets at the moon, baby
-.		AA	This is how we roll
-.		AA	Yeah, this is how we roll 
+chorus		BA	This is how we roll
+.		BA	We hanging round singing out everything on the radio
+.		BB	We light it up with our hands up
+.		BA	This is how we roll
+.		BE	This is how we ride
+.		BE	We slingin' up the mud, cuttin' through the countryside
+.		BA	This is how we roll
+
+outro		BA	Yeah, this is how we roll
+.		BA	This is how we roll
+.		BD	This is how we do
+.		BD	We're burning down the night shooting bullets at the moon
+.		BA	This is how we roll
+.		BA	Yeah, this is how we roll 

@@ -1,0 +1,81 @@
+intro	AA	You boys ever met a real country girl?
+.	AB	Talkin, true blue, out in the woods, down home, country
+
+verse	BA	She's a hot little number in her pick-up truck
+.	BA	Daddy's sweet money done jacked it up
+.	BB	She's a party-all-nighter
+.	BB	from South Carolina
+.	BC	a bad mamajama
+.	BC	from down in Alabama
+.	BD	She's a raging
+.	BD	cajun
+.	BE	a lunatic from Brunswick, juicy Georgia peach with a
+
+
+bridge	CA	thick southern drawl
+.	CA	sexy swingin' walk
+.	CA	brother she's all
+
+chorus	DA	Country
+.	DB	from her cowboy boots
+.	DB	to her down home roots
+.	DA	She's country
+.	DC	from the songs she plays
+.	DC	to the prayers she prays
+.	DC	That's the way she was born and raised
+.	DC	she ain't afraid to stay
+.	DA	country
+.	DA	Brother she's country
+
+verse	EA	A hell raisin sugar when the sun goes down
+.	EA	mama taught her how to rip up a town
+.	EB	Honey dripping honey
+.	EB	from the hollerin' Kentucky
+.	EC	getcha flippin' kinda trippy
+.	EC	like a Mississippi hippie
+.	ED	She's a Kansas
+.	ED	princess
+.	EE	crazy mother trucker
+.	EE	undercover lover
+
+bridge	FA	thick southern drawl
+.	FA	sexy swingin' walk
+.	FA	brother she's all
+
+chorus	GA	Country
+.	GB	from her cowboy boots
+.	GB	to her down home roots
+.	GA	She's country
+.	GC	from the songs she plays
+.	GC	to the prayers she prays
+.	GC	That's the way she was born and raised
+.	GC	she ain't afraid to stay
+.	GA	country
+.	GA	Nothin' but country
+
+break	HA	Thick southern drawl
+.	HA	Sexy swingin' walk
+.	HB	Aw show 'em how a country girl does it one time now
+
+bridge	IA	Brother she's country
+.	IB	from her cowboy boots
+.	IB	to her down home roots
+.	IA	Nothin but country
+.	IC	Yeah, yeah yeah
+
+chorus	JA	Country
+.	JB	from her cowboy boots
+.	JB	to her down home roots
+.	JA	She's country
+.	JC	from the songs she plays
+.	JC	to the prayers she prays
+.	JC	That's the way she was born and raised
+.	JC	she ain't afraid to stay
+.	JA	country
+.	JA	Yea she's nothing but country
+
+outro	KA	She's all about the country
+.	KB	From the backwoods
+.	KC	she's a homegrown
+.	KC	down to the bone
+.	KA	she's country

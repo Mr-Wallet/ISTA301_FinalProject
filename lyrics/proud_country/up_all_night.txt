@@ -1,0 +1,70 @@
+verse	AA	Yeah girl, I just had me,
+.	AA	One hell of a work week.
+.	AA	It's been driving me crazy,
+.	AA	Not enough of you baby.
+.	AB	And I been a-thinkin',
+.	AB	'Bout breakin' in the weekend
+.	AB	Not doin' any sleepin'
+.	AC	So get in, let's take a ride
+
+chorus	BA	And baby let's go
+.	BA	take a dirt road
+.	BA	Kick it back find a good song on the radio,
+.	BB	'Til we get lost in
+.	BB	a sunset falling
+.	BC	Lay a blanket by the creek
+.	BC	Where the moon peeks
+.	BC	over that sycamore tree
+.	BC	There won't be
+.	BB	anyone watchin'
+.	BB	No one watchin'
+.	BD	Now there ain't nothin' wrong, baby, you and I
+.	BD	Gettin' down to some up all night
+
+verse	CA	Now don't forget your flip-flops
+.	CA	We can stop by the quick stop
+.	CB	Get some jerky and a twelve pack
+.	CB	No tellin' when we'll be back
+.	CC	I got a cooler in the truck bed
+.	CC	I couple towels when we get wet
+.	CD	Cause you know we're gonna jump in
+.	CD	And take a little midnight swim
+
+chorus	DA	And baby let's go
+.	DA	take a dirt road
+.	DA	Kick it back find a good song on the radio,
+.	DB	'Til we get lost in
+.	DB	a sunset falling
+.	DC	Lay a blanket by the creek
+.	DC	Where the moon peeks
+.	DC	over that sycamore tree
+.	DC	There won't be
+.	DB	anyone watchin'
+.	DB	No one watchin'
+.	DD	Now there ain't nothin' wrong, baby, you and I
+.	DD	Gettin' down to some up all night
+
+break	EA	Come Monday, I'll be back to workin'
+.	EA	and savin'
+.	EA	But until then
+
+chorus	FA	And baby let's go
+.	FA	take a dirt road
+.	FA	Kick it back find a good song on the radio,
+.	FB	'Til we get lost in
+.	FB	a sunset falling
+.	FC	Lay a blanket by the creek
+.	FC	Where the moon peeks
+.	FC	over that sycamore tree
+.	FC	There won't be
+.	FB	anyone watchin'
+.	FB	No one watchin'
+.	FD	Now there ain't nothin' wrong, baby, you and I
+.	FD	Gettin' down to some up all night
+
+outro	GA	Yeah, me and you
+.	GB	Up all night
+.	GC	Yeah
+.	GD	Na na na na na na
+.	GD	Na na na na na na
+.	GD	Na na na na na na

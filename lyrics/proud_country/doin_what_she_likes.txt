@@ -1,0 +1,53 @@
+verse	AA	She likes it when I call in sick to work
+.	AA	Spend the whole day hanging with her
+.	IS	I might get fired but that's alright
+.	IS	I'm doin' what she likes
+.	BA	She likes it when I bring home fresh fajitas
+.	BA	And mix up a pitcher of margaritas
+.	IS	Catch a kind of buzz that lasts all night
+.	IS	Doin' what she likes
+
+chorus	CA	She likes hearin' how good she looks in them blue jeans
+.	CA	Little kisses, sweeter than sweet tea
+.	IS	Things I whispered in her ear, oh my
+.	IS	I like doin' what she likes
+.	CC	Like running my fingers through her long hair
+.	CC	Lightin' watermelon candles upstairs
+.	IS	Lettin' them burn and holdin' her all night
+.	IS	I like doin' what she likes
+
+verse	DA	She likes it when I get past second gear
+.	DA	Sees gravel flying in the rearview mirror
+.	IS	Sometimes I'm pushing 95
+.	IS	Doin' what she likes
+.	EA	And she likes it when I find a road that's dark
+.	EA	Can we pull up somewhere and park?
+.	IS	Turn the radio on and turn off the lights
+.	IS	Keep doin' what she likes
+
+chorus	DA	She likes hearin' how good she looks in them blue jeans
+.	DA	Little kisses, sweeter than sweet tea
+.	IS	Things I whispered in her ear, oh my
+.	IS	I like doin' what she likes
+.	EA	Like running my fingers through her long hair
+.	EA	Lightin' watermelon candles upstairs
+.	IS	Lettin' them burn and holdin' her all night
+.	IS	I like doin' what she likes
+
+break	FA	She likes it when I sing her old silly songs
+.	FA	And throwin' words where they don't belong
+.	IS	Sometimes we laugh 'til we almost cry
+.	IS	Doin' what she likes
+.	IS	Doin' what she likes
+
+chorus	GA	She likes hearin' how good she looks in them blue jeans
+.	GA	Little kisses, sweeter than sweet tea
+.	IS	Things I whispered in her ear, oh my
+.	IS	I like doin' what she likes
+.	GB	Like running my fingers through her long hair
+.	GB	Lightin' watermelon candles upstairs
+.	IS	Lettin' them burn and holdin' her all night
+.	IS	I like doin' what she likes
+
+outro	IS	I like doin' what she likes
+
