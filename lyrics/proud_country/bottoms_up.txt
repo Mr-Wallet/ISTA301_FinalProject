@@ -55,16 +55,16 @@ chorus		FA	Tonight is bottoms up
 .		FD	Pretty little mama lookin at ya like that
 .		FA	Make ya wanna slide on in like, Girl, what's up
 
-chorus		EA	Tonight is bottoms up
-.		EB	Throw it on down
-.		EB	Rock this quiet, little country town
-.		EA	Get up
-.		EC	Drop a tailgate on ya truck
-.		EC	Find a keg and fill ya cup
-.		ED	Kick it on back
-.		ED	Pretty little mama lookin at ya like that
-.		EA	Make ya wanna slide on in like, Girl, what's up
-.		EA	Yeah tonight is bottoms up
-.		EA	Get em up
-.		EA	Tonight is bottoms up
-.		EA	Get em up, get em up, get em up
+chorus		GA	Tonight is bottoms up
+.		GB	Throw it on down
+.		GB	Rock this quiet, little country town
+.		GA	Get up
+.		GC	Drop a tailgate on ya truck
+.		GC	Find a keg and fill ya cup
+.		GD	Kick it on back
+.		GD	Pretty little mama lookin at ya like that
+.		GA	Make ya wanna slide on in like, Girl, what's up
+.		GA	Yeah tonight is bottoms up
+.		GA	Get em up
+.		GA	Tonight is bottoms up
+.		GA	Get em up, get em up, get em up

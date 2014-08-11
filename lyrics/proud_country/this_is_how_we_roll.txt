@@ -10,7 +10,7 @@ verse		AA	The mixtape's
 chorus		BA	This is how we roll
 .		BA	We hanging round singing out everything on the radio
 .		BB	We light it up with our hands up
-.		BC	This is how we roll
+.		BA	This is how we roll
 .		BD	This is how we do
 .		BD	We're burning down the night shooting bullets at the moon
 .		BA	This is how we roll
@@ -31,13 +31,13 @@ break		CF	Up on them 37 Nittos
 .		CG	This life I live
 .		CF	it might not be for you but it's for me though
 
-chorus		BA	This is how we roll
-.		BA	We hanging round singing out everything on the radio
-.		BB	We light it up with our hands up
-.		BA	This is how we roll
-.		BD	This is how we do
-.		BD	When the world turns ugly I just turn and look at you
-.		BA	This is how we roll
+chorus		EA	This is how we roll
+.		EA	We hanging round singing out everything on the radio
+.		EB	We light it up with our hands up
+.		EA	This is how we roll
+.		ED	This is how we do
+.		ED	When the world turns ugly I just turn and look at you
+.		EA	This is how we roll
 
 verse		DA	Yeah, we're proud to be young
 .		DA	We stick to our guns
@@ -46,13 +46,13 @@ verse		DA	Yeah, we're proud to be young
 .		DB	And pray on them Sundays
 .		DB	Pass it around and we dream of that one day
 
-chorus		BA	This is how we roll
-.		BA	We hanging round singing out everything on the radio
-.		BB	We light it up with our hands up
-.		BA	This is how we roll
-.		BE	This is how we ride
-.		BE	We slingin' up the mud, cuttin' through the countryside
-.		BA	This is how we roll
+chorus		FA	This is how we roll
+.		FA	We hanging round singing out everything on the radio
+.		FB	We light it up with our hands up
+.		FA	This is how we roll
+.		FE	This is how we ride
+.		FE	We slingin' up the mud, cuttin' through the countryside
+.		FA	This is how we roll
 
 outro		BA	Yeah, this is how we roll
 .		BA	This is how we roll
